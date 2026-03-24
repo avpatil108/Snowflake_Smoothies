@@ -24,7 +24,7 @@ st.write("The name on your smoothie will be: ", title)
 
 # st.write('Your favorite fruit is: ',option)
 
-cnx = st.connction("snowflak")
+cnx = st.connection("snowflak")
 session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
